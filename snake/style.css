@@ -1,0 +1,34 @@
+
+/* board */ 
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    /* all things get the same size (flex) and location (justify-content for row and align itmes for colomn) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+  }
+  
+  #board {
+    background-color: #000;
+    
+    /* rezises so it is always a square */
+    width: 90vmin;
+    height: 90vmin;
+  
+    display: grid;
+    grid-template-rows: repeat(21,1fr);
+    grid-template-columns: repeat(21,1fr);
+  }
+  
+  .snake{
+    background-color: #fff;
+    border:  .25vmin solid black;
+  }
+  
+  .food{
+    background-color: #ff0000;
+    border:  .25vmin solid black;
+  }
